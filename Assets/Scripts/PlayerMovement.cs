@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-		if (Input.GetButton("escape"))
+		if (Input.GetKeyDown(KeyCode.Escape))
 		{
 			Application.Quit();
 		}
