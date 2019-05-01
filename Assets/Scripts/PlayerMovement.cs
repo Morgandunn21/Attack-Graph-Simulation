@@ -31,6 +31,13 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
     {
+		if (Input.GetButton("escape"))
+		{
+			Application.Quit();
+		}
+
+
+
         rotation = Input.GetAxis(hAxis);
         movement = Input.GetAxis(vAxis);
 
